@@ -41,7 +41,7 @@ export const Competition: CollectionConfig = {
           pickerAppearance: 'dayAndTime',
         },
         components: {
-          Field: '@/components/persian-date-and-time-picker#default',
+          Field: '@/components/jalali-date-and-time-picker#default',
         },
       },
     },
@@ -55,7 +55,7 @@ export const Competition: CollectionConfig = {
           pickerAppearance: 'dayAndTime',
         },
         components: {
-          Field: '@/components/persian-date-and-time-picker#default',
+          Field: '@/components/jalali-date-and-time-picker#default',
         },
       },
     },
@@ -69,7 +69,7 @@ export const Competition: CollectionConfig = {
           pickerAppearance: 'dayAndTime',
         },
         components: {
-          Field: '@/components/persian-date-and-time-picker#default',
+          Field: '@/components/jalali-date-and-time-picker#default',
         },
       },
     },

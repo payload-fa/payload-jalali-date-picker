@@ -8,14 +8,3 @@ export const ENV = process.env.NEXT_PUBLIC_ENV
 export const isDev = () => ENV === 'development'
 export const isStaging = () => ENV === 'staging'
 export const isProd = () => ENV === 'production'
-
-export const times = {
-  otpWait: {
-    get sec() {
-      return 120
-    },
-    get ms() {
-      return this.sec * 1000
-    },
-  },
-}
