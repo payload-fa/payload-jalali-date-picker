@@ -1,0 +1,63 @@
+{
+  "name": "payload-persian-date-picker",
+  "version": "1.0.0",
+  "description": "A blank template to get started with Payload 3.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "tsc": "tsc --noEmit --incremental",
+    "format": "prettier --write . --config .prettierrc --ignore-path .prettierignore --cache"
+  },
+  "dependencies": {
+    "@payloadcms/db-mongodb": "3.37.0",
+    "@payloadcms/next": "3.37.0",
+    "@payloadcms/translations": "3.37.0",
+    "@payloadcms/ui": "3.37.0",
+    "@radix-ui/react-popover": "1.1.13",
+    "@tailwindcss/postcss": "4.1.4",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "cross-env": "7.0.3",
+    "jalali-moment": "3.3.11",
+    "lucide-react": "0.503.0",
+    "next": "15.3.0",
+    "payload": "3.37.0",
+    "postcss": "8.5.3",
+    "react": "19.1.0",
+    "react-date-object": "2.1.9",
+    "react-dom": "19.1.0",
+    "react-multi-date-picker": "4.5.2",
+    "sharp": "0.32.6",
+    "tailwind-merge": "3.2.0",
+    "tailwindcss": "4.1.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.2.0",
+    "@types/node": "22.5.4",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.2",
+    "eslint": "9.16.0",
+    "eslint-config-next": "15.3.0",
+    "prettier": "3.4.2",
+    "tw-animate-css": "1.2.8",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=22.14.0",
+    "pnpm": "9 || 10"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp"
+    ]
+  },
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
+}
