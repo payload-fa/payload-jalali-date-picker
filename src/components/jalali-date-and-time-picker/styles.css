@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+.rmdp-border-left {
+  @apply !border-neutral-700;
+}
+
+.rmdp-shadow {
+  @apply text-neutral-200 !bg-neutral-800 !border-none !shadow-none;
+}
+
+.rmdp-arrow {
+  @apply !border-neutral-500;
+}
+
+.rmdp-arrow-container:hover {
+  @apply !bg-neutral-700;
+}
+
+.rmdp-header-values {
+  @apply !text-neutral-400;
+}
+
+.rmdp-week-day {
+  @apply !text-neutral-400 !font-light;
+}
+
+.rmdp-month-picker,
+.rmdp-year-picker {
+  @apply !text-neutral-200 !bg-neutral-900;
+}
+
+.rmdp-day {
+  @apply !text-neutral-400 !font-light;
+}
+
+.rmdp-day.rmdp-selected span:not(.highlight) {
+  @apply !bg-neutral-700 !border-neutral-500 !border !text-neutral-100 !rounded-none !shadow-none;
+}
+
+.rmdp-day.rmdp-selected span:is(.highlight) {
+  @apply !bg-red-800 !text-white !rounded-none !shadow-none;
+}
+
+.rmdp-day.rmdp-today span {
+  @apply !bg-transparent !rounded-none;
+}
+
+.rmdp-day.rmdp-today span:is(.highlight) {
+  @apply !text-rose-600 !border !border-rose-900;
+}
+
+.rmdp-day.rmdp-today span:not(.highlight) {
+  @apply !text-neutral-100 !rounded-none !border !border-neutral-700;
+}
+
+.rmdp-day.rmdp-today.rmdp-selected span {
+  @apply !text-white;
+}
+
+.rmdp-day span {
+  @apply !rounded-none !shadow-none;
+}
+
+.rmdp-day .highlight {
+  animation: none !important;
+}
+
+.rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:hover {
+  @apply !bg-neutral-800 !text-neutral-200 !rounded-none !border !border-neutral-500;
+}
+
+.rmdp-day:not(.rmdp-disabled, .rmdp-day-hidden) span:is(.highlight):hover {
+  @apply !text-rose-600 !border !border-rose-900;
+}
+
+.rmdp-border-bottom {
+  @apply !border-none;
+}
+
+.persian-date-picker-input input {
+  @apply pr-20;
+}
+
+.rmdp-time-picker input {
+  @apply !border-none !outline-none !text-neutral-300;
+}

@@ -9,6 +9,8 @@ import persian from 'react-date-object/calendars/persian'
 import weekends from 'react-multi-date-picker/plugins/highlight_weekends'
 import DateObject from 'react-date-object'
 
+import './styles.css'
+
 type Props = {
   value: Value
   readOnly: boolean
