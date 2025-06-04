@@ -43,7 +43,7 @@ You can integrate the custom component inside your Payload collection fields lik
   type: 'text', // store formatted string
   admin: {
     components: {
-      Field: YourJalaliDatePickerComponent,
+      Field: '@/components/persian-date-and-time-picker#default',
     },
   },
 }
