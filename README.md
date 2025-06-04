@@ -20,4 +20,43 @@ This project demonstrates how to extend PayloadCMS with custom fields to support
 
 ```bash
 pnpm install
+```
 
+## 📦 Installation
+
+```bash
+pnpm dev
+```
+This will start the PayloadCMS server and Next.js app in development mode.
+
+## 📅 Jalali Date Picker
+
+The Jalali date and time picker is built using:
+
+- [react-multi-date-picker](https://www.npmjs.com/package/react-multi-date-picker) – to handle Jalali calendar logic.
+- [shadcn/ui] – for consistent UI and styling.
+
+You can integrate the custom component inside your Payload collection fields like so:
+```ts
+{
+  name: 'eventDate',
+  type: 'text', // store formatted string
+  admin: {
+    components: {
+      Field: YourJalaliDatePickerComponent,
+    },
+  },
+}
+```
+Replace YourJalaliDatePickerComponent with the actual import path.
+
+## 📁 Project Status
+
+This is a minimal working example intended for devs who want to integrate Jalali date pickers into PayloadCMS.
+
+## 📄 License
+
+MIT
+```vbnet
+Let me know if you’d like a Persian version or want it tailored more toward publishing it on GitHub.
+```
