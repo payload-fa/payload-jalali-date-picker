@@ -22,7 +22,7 @@ This project demonstrates how to extend PayloadCMS with custom fields to support
 pnpm install
 ```
 
-## 📦 Installation
+## 🚀 Development
 
 ```bash
 pnpm dev
